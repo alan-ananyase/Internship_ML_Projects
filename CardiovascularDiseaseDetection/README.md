@@ -1,12 +1,12 @@
-#Cardiovascular Disease Detection
+# Cardiovascular Disease Detection
 
-##Citation:
+## Citation:
 1.	License: Unknown
 2.	Domain: Public
 3.	Dataset owner: Svetlana Ulianova
 4.	Date created: 2019-01-20
 
-##Features:
+## Features:
 1.	Age | Objective Feature | age | int (days)
 2.	Height | Objective Feature | height | int (cm) |
 3.	Weight | Objective Feature | weight | float (kg) |
@@ -22,5 +22,5 @@
 
 All of the dataset values were collected at the moment of medical examination.
 
-##The Problem Statement:
+## The Problem Statement:
 To build an application to classify the patients to be healthy or suffering from cardiovascular disease based on the given attributes.
