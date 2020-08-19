@@ -1,0 +1,55 @@
+1. The value of correlation coefficient will always be:
+A: between -1 and 1
+
+2. Which of the following cannot be used for dimensionality reduction?
+A. Recursive feature elimination - This eliminates the feature and not for dimentionality reduction
+
+3. Which of the following is not a kernel in Support Vector Machines?
+A: hyperplane
+
+4. Amongst the following, which one is least suitable for a dataset having non-linear decision boundaries?
+A. Logistic Regression
+
+5. In a Linear Regression problem, ‘X’ is independent variable and ‘Y’ is dependent variable, where ‘X’ represents weight in pounds. If you convert the unit of ‘X’ to kilograms, then new coefficient of ‘X’ will be?
+A. old coefficient of ‘X’ ÷ 2.205
+
+6. As we increase the number of estimators in ADABOOST Classifier, what happens to the accuracy of the model?
+A. none of the above - As the n_estimators increase, the model gets good acuracy to a point. Any further increase in n_estimator will overfit the model and give worst results.
+
+7. Which of the following is not an advantage of using random forest instead of decision trees?
+A. Random Forests explains more variance in data then decision trees
+
+8. Which of the following are correct about Principal Components?
+A. All of the above
+
+9. Which of the following are applications of clustering?
+A. Identifying spam or ham emails
+
+10. Which of the following is(are) hyper parameters of a decision tree?
+A. max_depth, max_features and min_samples_leaf
+
+11. What are outliers? Explain the Inter Quartile Range(IQR) method for outlier detection.
+A. Any datapoint that differs significantly from other datapoints is called as outliers. This is a statistical term. Outliers can occur due to multiple reasons: Typos (incorrectly added values), Instrumental/Measurement error, intentional error (outliers that are added intentionally), legit outliers (values that seem like outliers, but isn't)
+InterQuartile Range (IQR) tells us how the datapoints are spread across the middle value. It can also show how far is the datapoint from its middle value. Those datapoints that are too far away from the central value and the expected range are termed as outliers. We can plot a boxplot or whisker plot to identify IQR and outliers. Any datapoint that lies beyond 1.5 times from the edge of boxplot is outlier.
+To calculate outliers using IQR:
+	1. Find the median of the array (Q2). We get the first half and second half of the array.
+	2. Find the median of the first half (Q1) and median of the second half (Q3).
+	3. IQR = Q3-Q1
+	3. Any value that lies below Q1-1.5(IQR) and above Q3+1.5(IQR), are outliers.
+
+12. What is the primary difference between bagging and boosting algorithms?
+A. Both bagging and boosting are ensemble methods and require a base learner algorithm. Bagging performs a parallel training stage, whereas, boosting performs a sequentional training where the output of previous classifier's success is taken into consideration.
+
+13. What is adjusted R2 in logistic regression. How is it calculated?
+A. Unlike R2 which increases as the number of predictors/features increase, Adjusted R2 takes into account the chance of each predictor/feature. It will be slightly lower than R2.
+To calculate adjusted R2:
+	1. Calculate R2
+	2. Formula for Adjusted R2 = 1–[((1–R2)*(n–1))/(n–k–1)]; where n is number of datapoints (rows in dataset) and k is number of independent variables
+
+14. What is the difference between standardisation and normalisation?
+A. Normalization is to scale the feature to have values between 0 and 1. Standardization changes the data to have a mean of 0 and standard deviation of 1.
+
+15. What is cross-validation? Describe one advantage and one disadvantage of using cross-validation.
+A. Cross-validation is a technique which is used to evaluate the machine learning model. It splits the sample into multiple training and testing sets. The model is trained on each training set and tested on the testing set.
+Advantage of cross-validation is that it reduces overfitting - Since the dataset is split into multiple folds and trained on different folds, the model is free from overfitting.
+Disadvantage of cross-validation is that it increases the training time - Since we are training the dataset multiple times, it will increase the training time.
