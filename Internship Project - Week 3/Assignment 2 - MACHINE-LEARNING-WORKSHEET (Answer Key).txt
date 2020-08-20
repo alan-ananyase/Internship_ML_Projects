@@ -10,8 +10,8 @@ A: hyperplane
 4. Amongst the following, which one is least suitable for a dataset having non-linear decision boundaries?
 A. Logistic Regression
 
-5. In a Linear Regression problem, ‘X’ is independent variable and ‘Y’ is dependent variable, where ‘X’ represents weight in pounds. If you convert the unit of ‘X’ to kilograms, then new coefficient of ‘X’ will be?
-A. old coefficient of ‘X’ ÷ 2.205
+5. In a Linear Regression problem, â€˜Xâ€™ is independent variable and â€˜Yâ€™ is dependent variable, where â€˜Xâ€™ represents weight in pounds. If you convert the unit of â€˜Xâ€™ to kilograms, then new coefficient of â€˜Xâ€™ will be?
+A. old coefficient of â€˜Xâ€™ Ã· 2.205
 
 6. As we increase the number of estimators in ADABOOST Classifier, what happens to the accuracy of the model?
 A. none of the above - As the n_estimators increase, the model gets good acuracy to a point. Any further increase in n_estimator will overfit the model and give worst results.
@@ -44,7 +44,7 @@ A. Both bagging and boosting are ensemble methods and require a base learner alg
 A. Unlike R2 which increases as the number of predictors/features increase, Adjusted R2 takes into account the chance of each predictor/feature. It will be slightly lower than R2.
 To calculate adjusted R2:
 	1. Calculate R2
-	2. Formula for Adjusted R2 = 1–[((1–R2)*(n–1))/(n–k–1)]; where n is number of datapoints (rows in dataset) and k is number of independent variables
+	2. Formula for Adjusted R2 = 1â€“[((1â€“R2)*(nâ€“1))/(nâ€“kâ€“1)]; where n is number of datapoints (rows in dataset) and k is number of independent variables
 
 14. What is the difference between standardisation and normalisation?
 A. Normalization is to scale the feature to have values between 0 and 1. Standardization changes the data to have a mean of 0 and standard deviation of 1.
