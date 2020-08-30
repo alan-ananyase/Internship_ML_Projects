@@ -1,0 +1,51 @@
+SQL WORKSHEET-1
+
+1. Which of the following is/are DDL commands in SQL?
+	Create, ALTER
+
+2. Which of the following is/are DML commands in SQL?
+	Update, Delete & Select
+
+3. Full form of SQL is:
+	Structured Query Language
+
+4. Full form of DDL is:
+	Data Definition Language
+
+5. DML is:
+	Data Manipulation Language
+
+6. Which of the following statements can be used to create a table with column B int type and C float type?
+	Create Table A (B int,C float)
+
+7. Which of the following statements can be used to add a column D (float type) to the table A created above?
+	Alter Table A ADD COLUMN D float
+
+8. Which of the following statements can be used to drop the column added in the above question?
+	Alter Table A Drop Column D
+
+9. Which of the following statements can be used to change the data type (from float to int ) of the column D of table A created in above questions?
+	Alter Table A Alter Column D int
+
+10. Suppose we want to make Column B of Table A as primary key of the table. By which of the following statements we can do it?
+	Alter Table A Add Primary key B
+
+11. What is data-warehouse?
+	Data warehouse is an information system that stores data from single or multiple sources. It is designed to analyze data and uses Online Analytical Processing (OLAP).
+
+12. What is the difference between OLTP VS OLAP?
+	An Online transaction processing (OLTP) is a system that captures and maintains transaction data in a database. Each individual database has multiple rows and columns. This system ensure fast processing as the data is updated frequently.
+	An Online analytical processing (OLAP) performs complex queries to large amounts of data taken from OLTP databases and other sources. This used mainly for data mining, analytics and BI.
+
+13. What are the various characteristics of data-warehouse?
+	There are four main characteristics of data warehouse:
+	1. Subject-oriented: This means data warehouse provides output based on a particular query related to a subject. This makes it perfect for filtering data as per needs.
+	2. Integrated: Data warehouse follows a reliable naming convention, format and codes. The system his highly reliable as it follow strict procedures and retrieves data from several databases. This is possible only when it is integrated.
+	3. Time-variant: Data is maintained in different intervals, like weekly, monthly, anually, etc. This ensures that data is captures at regular intervals and provide as a source for historical data.
+	4. Non-volatile: Data in data warehouse is permanent. The only operations that can be performed is data loading and data access. Once data is uploaded in data warehouse, it cannot be deleted or removed.
+
+14. What is Star-Schema??
+	Star-schema is the most widely used approach to develop data warehouses. This schema consists of one or more fact tables that is used as reference for any number of dimensional tables. Each logical dimension is denormalized into one table. This is very effective to handle simpler queries.
+
+15. What do you mean by SETL?
+	A Semantic ETL (SETL) system is a scalable and high performace ETL system implemented to extract, transform and load large scale data from multiple data sources into a data warehouse efficiently. It has powerful modlues, classes and methods for data warehouse constructs and tasks. This system improves productivity and performance of a data warehouse considerably.
