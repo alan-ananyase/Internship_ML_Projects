@@ -1,0 +1,59 @@
+﻿PYTHON WORKSHEET 2
+
+1. Which of the following is not a core datatype in python?
+	struct
+
+2. Which of the following is an invalid variable name in python?
+	1_no
+3. Which one of the following is a keyword in python?
+	in
+
+4. In which of the following manner are the operators of the same precedence executed in python?
+	None of these
+
+5. Arrange the following in decreasing order of the precedence when they appear in an expression in python?
+i) Multiplication ii) Division iii) Exponential iv) Parentheses
+	iv – iii – ii – i
+
+6. (28//6)**3/3%3 = ?
+	0.3333…
+
+7. Which of the following is not equal to x16 ?
+	x^16
+
+8. a = input(“Enter an integer”). What will be the data type of a?
+	str
+
+9. Which of the following statements are correct?
+	Python’s operators’ precedence is based on PEDMAS
+	In case of operators’ having same precedence, the one on the left side is executed first.
+
+10. Which of the following is(are) valid statement(s) in python?
+	a,b,c = 1000, 2000, 3000
+
+11. Differentiate between a list, tuple, set and dictionary.
+	Lists - enclosed in brackets [], have any type of objects and are mutable
+	Tuple - enclosed in parenthesis (), have any type of objects and are immutable
+	Set - enclosed in parenthesis and brackets ([]), have unique values, is a built-in function and are mutable
+	Dictionary - enclosed in curly brackets {}, have keys and values, and are mutable
+
+12. Are strings mutable in python? Suppose you have a string “I+Love+Python”, write a small code to replace ‘+’ with space in python.
+	No. Although we can access any character using slicing, we cannot change any character.
+	"I+Love+Python".replace("+", " ") # code also mentioned in Jupyter Notebook
+
+13. What does the function ord() do in python? Explain with example. Also, write down the function for getting the datatype of a variable in python.
+	ord() returns the Unicode code point for a one-character string.
+	Example:
+	ord("#") >> 35
+	ord("a") >> 97
+	ord("1") >> 49
+	
+	def data_type(variable): # code also mentioned in Jupyter Notebook
+    	    return type(variable)
+	data_type({1:2})
+
+14. Write a python program to solve a quadratic equation of the form 𝑎𝑥2+𝑏𝑥+𝑐=0. Where a, b and c are to be taken by user input. Handle the erroneous input, such as ‘a’ should not be equal to 0.
+	Internship_Week_4_Assignment_1.pynb
+
+15. Write a python program to find the sum of first ‘n’ natural numbers without using any loop. Ask user to input the value of ‘n’.
+	Internship_Week_4_Assignment_1.pynb
