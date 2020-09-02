@@ -1,0 +1,61 @@
+﻿MACHINE LEARNING WORKSHEET – 2
+
+1. In which of the following you can say that the model is overfitting?
+	High R-squared value for train-set and Low R-squared value for test-set. > Overfitting = Performance on Training - Performance on Test
+
+2. Which among the following is a disadvantage of decision trees?
+	Decision trees are highly prone to overfitting.
+
+3. Which of the following is an ensemble technique?
+	Random Forest
+
+4. Suppose you are building a classification model for detection of a fatal disease where detection of the disease is most important. In this case which of the following metrics you would focus on?
+	None of the above. > we go for Specificity.
+
+5. The value of AUC (Area under Curve) value for ROC curve of model A is 0.70 and of model B is 0.85. Which of these two models is doing better job in classification?
+	Model B
+
+6. Which of the following are the regularization technique in Linear Regression??
+	Ridge
+	Lasso
+
+7. Which of the following is not an example of boosting technique?
+	Decision Tree
+	Random Forest
+
+8. Which of the techniques are used for regularization of Decision Trees?
+	Pruning
+	Restricting the max depth of the tree
+
+9. Which of the following statements is true regarding the Adaboost technique?
+	We initialize the probabilities of the distribution as 1/n, where n is the number of data-points
+	A tree in the ensemble focuses more on the data points on which the previous tree was not performing well
+
+10. Explain how does the adjusted R-squared penalize the presence of unnecessary predictors in the model?
+	R2 will either remain the same or increase as we add more variables and even if they have no relationship with the output variable. This is where Adjusted R2 will help. If you add more variables that have less significance, the adjusted R2 will decrease.
+
+11. Differentiate between Ridge and Lasso Regression.
+	Lasso regression tends to make the coefficients to absolute zero as compared to Ridge Regression.
+	Lasso regression penalizes the model for the sum of absolute values of the weights, whereas Ridge Regression penalizes for the sum of squared value of the weights.
+
+12. What is VIF? What is the suitable value of a VIF for a feature to be included in a regression modelling?
+	Variance Inflation Factor (VIF) is a numerical value that detects multicollinearity (correlation between independent variables) in a regression analysis. VIF range from 1 upwards. As a rule, any VIF value between 1 and 5 is moderately correlated and could be taken into consideration. However, there are problem statements which would consider high VIF values too.
+
+13. Why do we need to scale the data before feeding it to the train the model?
+	Scaling data is really important as few distance based ML algorithms like KNN or SVM uses distances between datapoints to determine their similarity. If the data is not scaled, the model will give more higher weightage to certain features that shouldn't have high weighatge. This will make the model to be more biased to one particular feature.
+
+14. What are the different metrics which are used to check the goodness of fit in linear regression?
+	R-square
+	Adjusted R-square
+	Root Mean Squared Error (RMSE)
+	Chi-Square
+
+15. From the following confusion matrix calculate sensitivity, specificity, precision, recall and accuracy.
+Actual/Predicted	True	False
+True			1000	50
+False			250	1200
+	Sensitivity = 1000/(1000+250) = 0.8
+	Specificity = 1200/(1200+50) = 0.96
+	Precision = 1000/(1000+50) = 0.95
+	Recall = 1000/(1000+250) = 0.8
+	Accuracy = (1000+1200)/(1000+50+250+1200) = 0.88
