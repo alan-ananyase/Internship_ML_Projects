@@ -1,0 +1,76 @@
+SQL WORKSHEET-3
+
+Refer the following ERD and answer all the questions in this worksheet. You have to write the queries using mysql for the required Operation.
+> Customers: stores customer’s data.
+> Products: stores a list of scale model cars.
+> ProductLines: stores a list of product line categories.
+> Orders: stores sales orders placed by customers.
+> OrderDetails: stores sales order line items for each sales order.
+> Payments: stores payments made by customers based on their accounts.
+> Employees: stores all employee information as well as the organization structure such as who reports to whom.
+> Offices: stores sales office data.
+
+1. Write SQL query to create table Customers.
+	create table customers(customerNumber int(10),
+	customerName varchar(15),
+	contactLastName varchar(15),
+	contactFirstName varchar(15),
+	phone int(10),
+	addressLine1 varchar(10),
+	addressLine2 varchar(10),
+	city varchar(10),
+	state varchar(10),
+	postalCode int(6),
+	country varchar(10),
+	salesRepEmployeeNumber int(10),
+	creditLimit int(10),
+	UNIQUE (customerNumber));
+
+2. Write SQL query to create table Orders.
+	create table orders(orderNumber int(10),
+	orderDate date,
+	requiredDate date,
+	shippedDate date,
+	status varchar(6),
+	comments varchar(8),
+	customerNumber int(10),
+	UNIQUE (orderNumber));
+
+3. Write SQL query to show all the columns data from the Orders Table.
+	select * from orders;
+
+4. Write SQL query to show all the comments from the Orders Table.
+	select comments from orders
+
+5. Write a SQL query to show orderDate and Total number of orders placed on that date, from Orders table.
+	select orderDate, count(*) as Number_of_Orders from orders group by orderDate;
+
+6. Write a SQL query to show employeNumber, lastName, firstName of all the employees from employees table.
+	select employeeNumber, lastName, firstName from employees;
+
+7. Write a SQL query to show all orderNumber, customerName of the person who placed the respective order.
+	SELECT orders.orderNumber, customers.customerName FROM orders INNER JOIN customers ON orders.customerNumber=customers.customerNumber;
+
+8. Write a SQL query to show name of all the customers in one column and salerepemployee name in another column.
+	SELECT customers.customerName, employees.firstname FROM customers INNER JOIN employees ON customers.salesRepEmployeeNumber=employees.employeeNumber;
+
+9. Write a SQL query to show Date in one column and total payment amount of the payments made on that date from the payments table.
+	select paymentDate, sum(amount) as Total_Amount from payments group by paymentDate;
+
+10. Write a SQL query to show all the products productName, MSRP, productDescription from the products table.
+	select productName, MSRP, productDescription from products;
+
+11. Write a SQL query to print the productName, productDescription of the most ordered product.
+	select products.productName, products.productDescription, sum(orderdetails.quantityOrdered) as Quantity from orderdetails inner join products on orderdetails.productCode=products.productCode group by orderdetails.productCode order by sum(orderdetails.quantityOrdered) desc, products.productName asc limit 1;
+
+12. Write a SQL query to print the city name where maximum number of orders were placed.
+	select offices.city from offices inner join employees using (officeCode) inner join customers on employees.employeeNumber=customers.salesRepEmployeeNumber inner join orders using (customerNumber) group by offices.city order by count(orders.orderNumber) asc limit 1;
+
+13. Write a SQL query to get the name of the state having maximum number of customers.
+	select offices.state from offices inner join employees using (officeCode) inner join customers on employees.employeeNumber=customers.salesRepEmployeeNumber group by offices.state order by count(customers.customerNumber) asc limit 1;
+
+14. Write a SQL query to print the employee number in one column and Full name of the employee in the second column for all the employees.
+
+
+15. Write a SQL query to print the orderNumber, customer Name and total amount paid by the customer for that order (quantityOrdered × priceEach).
+
