@@ -1,7 +1,7 @@
 SQL WORKSHEET-3
 
 Refer the following ERD and answer all the questions in this worksheet. You have to write the queries using mysql for the required Operation.
-> Customers: stores customer’s data.
+> Customers: stores customerâ€™s data.
 > Products: stores a list of scale model cars.
 > ProductLines: stores a list of product line categories.
 > Orders: stores sales orders placed by customers.
@@ -70,7 +70,7 @@ Refer the following ERD and answer all the questions in this worksheet. You have
 	select offices.state from offices inner join employees using (officeCode) inner join customers on employees.employeeNumber=customers.salesRepEmployeeNumber group by offices.state order by count(customers.customerNumber) asc limit 1;
 
 14. Write a SQL query to print the employee number in one column and Full name of the employee in the second column for all the employees.
+	select employeeNumber, concat(firstName,' ',lastName) as Full_Name from employees;
 
-
-15. Write a SQL query to print the orderNumber, customer Name and total amount paid by the customer for that order (quantityOrdered × priceEach).
-
+15. Write a SQL query to print the orderNumber, customer Name and total amount paid by the customer for that order (quantityOrdered Ã— priceEach).
+	select orders.orderNumber, customers.customerName, orderdetails.quantityOrdered*orderdetails.priceEach from orderdetails inner join orders using (orderNumber) inner join customers using (customerNumber);
