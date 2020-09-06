@@ -1,0 +1,78 @@
+﻿NLP WORKSHEET-1
+
+1. Which of the following are steps in NLP?
+	Lexical Processing
+	Syntactic processing
+	Semantic processing
+
+2. Which of the following tasks can be completed with only lexical processing?
+	Spam- Ham classification
+	Machine Translation
+	Chat-Bot building
+
+3. Which of the following are steps in lexical processing?
+	Breaking the text in to words
+	Removing Stopwords
+
+4. Which of the following tokenizers are available in NLTK?
+	word_tokenize()
+	sent_tokenize()
+
+This answer is solved in NLP_Worksheet_1(My Answers).ipynb
+5. What will be the output of the following lines of code?
+from nltk.tokenize import word_tokenize
+doc = “I love #food #pasta”
+print( word_tokenize(doc))
+	[“I”, “love”, “#”, “food”, “#”, “pasta”]
+
+This answer is solved in NLP_Worksheet_1(My Answers).ipynb
+6. What will be the output of the following lines of code?
+from nltk.tokenize import TweetTokenizer
+tknz = TweetTokenizer()
+doc = “I love #food #pasta”
+print( tknz.tokenize(doc))
+	[“I”, “love”, “#food”, “#pasta”]
+
+7. Which of the following is/ are true regarding to stopwords?
+	They provide no useful information, especially in applications such as spam detector or search engine.
+	Since the frequency of stopwords is very high, removing stopwords results in a much smaller data.
+	removing stopwords results in faster computation.
+
+8. In which of the NLP tasks we can remove stopwords?
+	spam-ham classifier building
+	Chat- Bot building
+
+9. which of the following is/are true regarding bag of words model of text?
+	It takes in to consideration of only the words present in the text and not the order of the words.
+
+This answer is solved in NLP_Worksheet_1(My Answers).ipynb
+10. Consider the following two documents we create a bow representation using Count Vectorizer of NLTK library. What will the shape of the resultant data?
+from sklearn.feature_extraction.text import CountVectorizer
+Doc1 = "HE love python"
+Doc2 = "HE love eating healthy"
+vectrz = CountVectorizer()
+Bow_array = vectrz.fit_transform([Doc1, Doc2])
+print(Bow_array.shape)
+	(2,5)
+
+11. Which of the following are true regarding Tf-Idf?
+	The importance of a word in a document becomes more if it is present in every other document also
+
+The below answers are solved in NLP_Worksheet_1(My Answers).ipynb
+For questions Q12-Q15, Consider the following Documents and answer the Questions
+Document1: "Vapour, Bangalore has a really great terrace seating and an awesome view of the Bangalore skyline"
+Document2: "The beer at Vapour, Bangalore was amazing. My favorites are the wheat beer and the ale beer."
+Document3: "Vapour, Bangalore has the best view in Bangalore."
+Please remove the stopwords from the above documents before answering the below questions:
+
+12. What will be the tf-idf score of word “Bangalore” in Document 1?
+	0.2
+
+13. What will be the tf-idf score of the word “beer” in document 2?
+	0.89
+
+14. Which of the following statements are true regarding the above documents?
+	The tf-idf score of “vapour” is less than tf-idf score of “Bangalore” in document 1
+
+15. Which of the following are advantages of using tf-idf model over BOW model?
+	The bow model gives equal importance to all the words while tf-idf model gives more importance to those words in a document which occurs exclusively only I this document .4
