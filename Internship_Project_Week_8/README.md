@@ -1,4 +1,4 @@
-## Project 2
+## Project 2 - Spam Email Detection
 
 Use case
 =========
