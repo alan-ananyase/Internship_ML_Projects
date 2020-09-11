@@ -1,0 +1,41 @@
+PYTHON WORKSHEET-1
+
+1. Which of the following operators is used to calculate remainder in a division?
+	%
+
+2. In python 2//3 is equal to?
+	0
+
+3. In python, 6<<2 is equal to?
+	24
+
+4. In python, 6&2 will give which of the following as output?
+	2
+
+5. In python, 6|2 will give which of the following as output?
+	6
+
+6. What does the finally keyword denotes in python?
+	the finally block will be executed no matter if the try block raises an error or not.
+
+7. What does raise keyword is used for in python?
+	It is used to raise an exception.
+
+8. Which of the following is a common use case of yield keyword in python?
+	in defining a generator
+
+9. Which of the following are the valid variable names?
+	_abc
+	abc2
+
+10. Which of the following are the keywords in python?
+	yield
+	raise
+
+
+The below answers are solved in "PYTHON_WORKSHEET_1(My_Answers).ipynb"
+11. Write a python program to find the factorial of a number.
+12. Write a python program to find whether a number is prime or composite.
+13. Write a python program to check whether a given string is palindrome or not.
+14. Write a Python program to get the third side of right-angled triangle from two given sides.
+15. Write a python program to print the frequency of each of the characters present in a given string.
