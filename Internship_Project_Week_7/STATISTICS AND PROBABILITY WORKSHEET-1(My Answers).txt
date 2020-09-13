@@ -1,0 +1,50 @@
+﻿STATISTICS AND PROBABILITY WORKSHEET-1
+
+1. A die is thrown 1402 times. The frequencies for the outcomes 1, 2, 3, 4, 5 and 6 are given in the following table:
+Find the probability of getting 6 as outcome:
+	0.135
+
+2. A telephone directory page has 400 telephone numbers. The frequency distribution of their unit place digit (for example, in the number 25827689, the unit place digit is 9 is given in table below:
+First row refers to the digits. Second row to their frequencies.
+What will be the probability of getting a digit with unit place digit odd number that is 1,3,5,7,9?
+	0.53
+
+3. A tyre manufacturing company which keeps a record of the distance covered before a tyre needed to be replaced. The table below shows the results of 1100 cases.
+If we buy a new tyre of this company, what is the probability that the tyre will last more than 9000 miles?
+	0.745
+
+4. please refer to the case and table given in the question No. 3 and determine what is the probability that if we buy a new tyre then it will last in the interval [4000-1400] miles?
+	0.577
+
+5. We have a box containing cards numbered from 0 to 9. We draw a card randomly from the box. If it is told to you that the card drawn is greater than 4 what is the probability that the card is odd?
+	0.5
+
+6. We have a box containing cards numbered from 1 to 8. We draw a card randomly from the box. If it is told to you that the card drawn is less than 4 what is the probability that the card is even?
+	0.40
+
+7. A die is thrown twice and the sum of the numbers appearing is observed to be 7. What is the conditional probability that the number 6 has appeared at least on one of the die?
+	0.33
+
+8. Consider the experiment of tossing a coin. If the coin shows tail, toss it again but if it shows head, then throw a die. Find the conditional probability of the event that ‘the die shows a number greater than 4’ given that ‘there is at least one Head’.
+	0.22
+
+9. There are three persons Evan, Ross and Michelle. These people lined up randomly for a picture. What is the probability of Ross being at one of the ends of the line?
+	0.66
+
+10. Let us make an assumption that each born child is equally likely to be a boy or a girl. Now suppose If a family has two children, what is the conditional probability that both are girls given that at least one of them is a girl?
+	0.33
+
+11. Consider the same case as in the question no. 11. It is given that elder child is a boy. What is the conditional probability that both children are boys?
+	0.33
+
+12. We toss a coin. If we get head, we toss a coin again and if we get tail we throw a die. What is the probability of getting a number greater than 4 on die?
+	0.166
+
+13. We toss a coin. If we get head, we toss a coin again and if we get tail we throw a die. What is the probability of getting an odd number on die?
+	0.25
+
+14. Suppose we throw two dice together. What is the conditional probability of getting sum of two numbers found on the two die after throwing is less than 4, provided that the two numbers found on the two die are different?
+	0.05
+
+15. A box contains three coins: two regular coins and one fake two-headed coin, you pick a coin at random and toss it. What is the probability that it lands heads up?
+	2/3
