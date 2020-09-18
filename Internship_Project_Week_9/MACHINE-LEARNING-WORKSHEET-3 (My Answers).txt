@@ -1,0 +1,98 @@
+﻿Machine Learning
+
+1. Give short description each of Linear, RBF, Polynomial kernels used in SVM. 
+	Linear:
+	It is used when the data is linearly separable, i.e. it can be separated using a single line. It is one of the most common kernels to be used. It is mostly used when there are a large number of features in a particular dataset. One of the examples where there are a lot of features, is Text Classification, as each alphabet is a new feature.
+	Advantages:
+	Firstly, training Linear Kernel is faster than any other kernel.
+	Secondly, while training, only the optimisation of the C regularization parameter is required. On the other hand, when training with other kernels, there is a need to optimise the gamma parameter which means that performing a Grid Search will usually take more time.
+	Polynomial:
+	It is used for non-linear models and mainly used in natural Language Processing (NLP)
+	k(x,z) = ( z’ x + c) ^n
+	where n is the order/degree of the kernel, and c is a constant that allows to trade off the influence of the higher order and lower order terms.
+	In this kernel, we simply calculate the dot product by increasing the power of the kernel. This kernel can be used to map a hyperbolic surface to a plane.
+	Radial basis function kernel (RBF) / Gaussian Kernel:
+	Gaussian RBF(Radial Basis Function) is often used for Computer Vision. RBF kernel is a function whose value depends on the distance from the origin or from some point. Each Radial Basis Function is a dimension in a high dimensional basis space.
+	||X1 — X2 || = Euclidean distance between X1 & X2
+	Using the distance in the original space, we calculate the dot product (similarity) of X1 & X2, where similarity is the angular distance between two points.
+	C: Inverse of the strength of regularization. As the value of C increases, the model gets overfits. As the value of C decreases the model underfits.
+	γ: Gamma (used only for RBF kernel). As the value of Gamma increases the model gets overfits. As the value of Gamma decreases the model underfits.
+
+2. R-squared or Residual Sum of Squares (RSS) which one of these two is a better measure of goodness of fit of model in regression and why?? 
+	Although both RSS and R2 contribute to the understand of how data varies within a model, R2 would be a better measure for goodness of fit in regression model. Here’s why:
+	R2 represents the proportion of the variance in the data which is explained by the model. If the value is close to 1, better the fit.
+	RSS is the sum of the squared distances between the actual versus the predicted. Here the actual number that is obtained will largely depend on scale of the response variable.
+	Let’s say the feature is in milliliters, the R2 value is 0.91 and RSS is 10.66. If we convert the feature to liters, R2 would still remain the same 0.91, whereas RSS value would differ drastically to 1000 times as compared to milliliters (RSS=10661.03).
+
+3. What are TSS (Total Sum of Squares), ESS (Explained Sum of Squares) and RSS (Residual Sum of Squares) in regression. Also mention the equation relating these three metrics with each other. 
+	TSS is the squared differences between the observed dependent variable and its mean. In other words, this is the dispersion of the observed variables around the mean. This is the measure of total variability of the dataset.
+	TSS = sum[i=1 to n](y-y’)^2; y is observed and y’ is the mean
+	ESS, also known as sum of squares due to regression, is the sum of the differences between the predicted value and the mean of the dependent variable. In other words, it is a measure that describes how well the line fits the data.
+	ESS = sum[i=1 to n](y~-y’)^2; y~ is predicted and y’ is the mean
+	RSS, also known as sum of squares error, is the difference between the observed value and the predicted value. This error must be reduced.
+	RSS = sum[i=1 to n]e^2
+
+	The total variability of the data set (TSS) is equal to the variability explained by the regression line (ESS) plus the unexplained variability (RSS) , known as error.
+	TSS = ESS + RSS
+
+4. What is Gini –impurity index? 
+	Gini index or Gini impurity measures the degree or probability of a particular variable being wrongly classified when it is randomly chosen.
+	The degree of Gini index varies between 0 and 1, where 0 denotes that all elements belong to a certain class or if there exists only one class, and 1 denotes that the elements are randomly distributed across various classes. A Gini Index of 0.5 denotes equally distributed elements into some classes.
+	Gini Index = 1 – sum[i=1 to n](p)^2
+	where p is the probability of an object being classified to a particular class.
+	While building the decision tree, it is better to choose the attribute/feature with the least Gini index as the root node.
+
+5. Are unregularized decision-trees prone to overfitting? If yes, why? 
+	Yes, unregularized decision trees are prone to over-fitting.
+	When decision trees are left on its own without regularization, the tree will continue to fi until each data point is a different leaf in the tree. This will not generalize well and will overfit the model. So, we have to put in a criterion to stop splitting the nodes beyond a point. This can be done by pruning the tree, limit max depth of trees, using ensemble techniques and hyperparameter tuning.
+
+6. What is an ensemble technique in machine learning? 
+	Ensemble techniques help improve machine learning results by combining several machine learning techniques into one predictive model in order to decrease variance (bagging), bias (boosting), or improve predictions (stacking). Ensemble can be performed sequentially (Adaboost) or parallelly (Random Forest).
+
+7. What is the difference between Bagging and Boosting techniques? 
+	Bagging stands for bootstrap aggregation. One way to reduce the variance of an estimate is to average together multiple estimates. Bagging uses bootstrap sampling to obtain the data subsets for training the base learners. For aggregating the outputs of base learners, bagging uses voting for classification and averaging for regression.
+	f(x) = 1/n(sum[i=1 to n](f’(x)))
+	Boosting reduces bias and refers to a family of algorithms that are able to convert weak learners to strong learners. The main principle of boosting is to fit a sequence of weak learners− models that are only slightly better than random guessing, such as small decision trees− to weighted versions of the data. More weight is given to examples that were misclassified by earlier rounds. The predictions are then combined through a weighted majority vote (classification) or a weighted sum (regression) to produce the final prediction.
+
+8. What is out-of-bag error in random forests? 
+	Out-of-bag error is similar to leave-one-out cross-validation. Random Forest is a classifier algorithm that works on 2 methods – bagging and random subspace method. During bootstrapping process, Random Forest uses random sub features out of the possible features to create n trees. Out-of-bag (OOB) classifiers creates aggregation of votes for n trees, for each vector in the training set and does not contain any vector from the training set. Now, OOB estimate for generalization error finds the error rate of the OOB classifier by comparing it with the training set.
+	The importance of using this is to understand the accuracy of OOB estimate with the training set over the test set of the same size. Therefore, the out-of-bag error estimate removes the need for a set aside test set.
+
+9. What is K-fold cross-validation? 
+	Cross-validation is used to estimate the skill of a machine learning model on unseen data. The ‘K’ refers to the number of groups that a given data sample is to be split into. Since this process includes training and testing multiple times, this process is likely to take more time to complete. The process for K-fold cross-validation is:
+	a. Shuffle the dataset randomly
+	b. Split the dataset into K groups
+	c. For each unique group:
+		1. Take the group as a hold out or test data set
+		2. Take the remaining groups as a training data set
+		3. Fit a model on the training set and evaluate it on the test set
+		4. Retain the evaluation score and discard the model
+	d. Summarize the skill of the model using the sample of model evaluation scores
+
+10. What is hyper parameter tuning in machine learning and why it is done? 
+	Hyper parameter tuning is the process of searching for the ideal machine learning model architecture. When we assign a set of parameters for training using a model, the model generates a generalized function using these set of parameters. The idea is to understand how effectively this generalized function is able to predict values using a new input data.
+	Hyper parameter tuning helps find the best model architecture to optimize a model and evaluate the results of that model. One major advantage is that this helps to reduce data leakage.
+
+11. What issues can occur if we have a large learning rate in Gradient Descent? 
+	When the learning rate is too large, gradient descent can inadvertently increase rather than decrease the training error. At extremes, a learning rate that is too large will result in weight updates that will be too large and the performance of the model (such as its loss on the training dataset) will oscillate over training epochs. Oscillating performance is said to be caused by weights that diverge. When using high learning rates, it is possible to encounter a positive feedback loop in which large weights induce large gradients which then induce a large update to the weights. If these updates consistently increase the size of the weights and rapidly moves away from the origin until numerical overflow occurs.
+
+12. What is bias-variance trade off in machine learning? 
+	In statistics and machine learning, the bias–variance tradeoff is the property of a set of predictive models whereby models with a lower bias in parameter estimation have a higher variance of the parameter estimates across samples, and vice versa. The bias–variance dilemma or bias–variance problem is the conflict in trying to simultaneously minimize these two sources of error that prevent supervised learning algorithms from generalizing beyond their training set
+	The bias error is an error from erroneous assumptions in the learning algorithm. High bias can cause an algorithm to miss the relevant relations between features and target outputs (underfitting).
+	The variance is an error from sensitivity to small fluctuations in the training set. High variance can cause an algorithm to model the random noise in the training data, rather than the intended outputs (overfitting)
+
+13. What is the need of regularization in machine learning? 
+	Regularizations are techniques used to reduce the error by fitting a function appropriately on the given training set and avoid overfitting. This shrinks the coefficient estimates towards zero. In other words, this technique discourages learning a more complex or flexible model, so as to avoid the risk of overfitting.
+
+14. Differentiate between Adaboost and Gradient Boosting 
+	In Adaboost, ‘shortcomings’ are identified by high-weight data points. In Gradient Boosting, ‘shortcomings’ (of existing weak learners) are identified by gradients.
+	Adaboost is more about voting weights. Gradient boosting is more about adding gradient optimization
+	Adaboost increases the accuracy by giving more weightage to the target which is misclassified by the model. At each iteration, Adaptive boosting algorithm changes the sample distribution by modifying the weights attached to each of the instances. It increases the weights of the wrongly predicted instances and decreases the ones of the correctly predicted instances.
+	Gradient boosting calculates the gradient (derivative) of the Loss Function with respect to the prediction (instead of the features). Gradient boosting increases the accuracy by minimizing the Loss Function (error which is difference of actual and predicted value) and having this loss as target for the next iteration.
+	Gradient boosting algorithm builds first weak learner and calculates the Loss Function. It then        builds a second learner to predict the loss after the first step. The step continues for third learner and then for fourth learner and so on until a certain threshold is reached.
+	Adaboost is short for adaptive boosting, which describes an algorithm for using other methods to produce a statistically weighted outcome, which the machine can then use to boost classification of use cases.
+	Gradient boosting is a method that allows a computer/system to learn based on regression analysis and classification. The result is that the machine might be able to predict outcomes based on history. Some of the methods used include decision trees and use cases.
+
+15. Can we use Logistic Regression for classification of Non-Linear Data? If not, why? 
+	Logistic regression is known and used as a linear classifier. It is used to come up with a hyperplane in feature space to separate observations that belong to a class from all the other observations that do not belong to that class. The decision boundary is thus linear.
+	However, Logistic regression comes under ‘Generalized Linear Model (GLM)’. It’s kind of uncanny why a logistic regression will be called ‘linear’ model when the function itself is non-linear sigmoid curve. Logistic Regression has traditionally been used as a linear classifier, i.e. when the classes can be separated in the feature space by linear boundaries.
