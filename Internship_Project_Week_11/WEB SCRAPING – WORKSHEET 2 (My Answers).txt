@@ -1,0 +1,49 @@
+﻿WEB SCRAPING – WORKSHEET 2
+
+1. Which command method looks through a tag’s descendants and retrieves all descendants that match your filters?
+	find_all()
+
+2. Which operating system among the following is not supported by selenium.
+	Solaris
+
+3. Which of these languages is NOT supported by the Selenium RC.
+	ASP
+
+4. Which of these commands is used to enter text in text_boxes.
+	send_keys()
+
+5. Websites fetched by crawler are indexed and kept in huge database, this process is called as:
+	Indexing
+
+6. Web Crawler is also called as:
+	Web-spider
+
+7. Which selenium command among the following makes WebDriver wait for a certain condition to occur before proceeding further with execution.
+	WebDriverWait
+
+8. Which of the following are commonly used expected conditions in Selenium?
+	title_contains
+
+9. Where xpath is used?
+	XML
+
+10. Which of the following commands is used to find an element in a webpage from the id attribute of its tag.
+	find_element_by_id
+
+11. Consider the following line in a HTML code
+<a class="sister" href="http://example.com/lacie" id="link2"># Lacie # </a>
+Which of the following are attributes of <a> tag here?
+	class
+	href
+
+12. Which among the following is/are parsers used in BeautifulSoup?
+	href
+	lxml
+
+13. Select the packages you require generally in web-scraping.
+	Selenium
+	BeautifulSoup
+
+The below questions have been solved in "WEB SCRAPING – WORKSHEET 2 (My Answers).ipynb"
+14. Write a python program to scrap 10 images of Rayban Sunglasses from flipkart website and save them in a directory.
+15. Write a program to scrap 20 mouses’ data which includes model name, price from www.amazon.in whose price is less than 500 and make a data frame with 2 columns “model_name”,” price” with the scraped data.
