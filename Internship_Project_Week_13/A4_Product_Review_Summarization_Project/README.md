@@ -17,7 +17,7 @@ You are given a file named “Cell_Phones_and_Accessories.json”. This file con
 - Review_Date- Date when the review has been posted
 - Prod_img- images that users post after they have received the product
 - Rev_verify- Flag to represent whether the review has been verified or not. (True/False)<br>
-Now, since you have understood the features present in the dataset, you have to do a proper data cleaning for the same. You may remove all the rows where no review is present. You may choose any column(s) to perform this task. You may perform EDA, feature engineering if you are able to find any important new feature.<br>
+<br>Now, since you have understood the features present in the dataset, you have to do a proper data cleaning for the same. You may remove all the rows where no review is present. You may choose any column(s) to perform this task. You may perform EDA, feature engineering if you are able to find any important new feature.<br>
 Once you have done data pre-processing for all the products, you have to predict the important words which summarize the reviews for each product and thus return those words. Number of words extracted for each topic depends on your understanding, you need to give a suitable reason for the number you choose. The summary keywords should not contain more than 30 words.<br>
 #### OUTPUT:<br>
 The output should be a dataframe containing following information:<br>
@@ -27,6 +27,6 @@ The output should be a dataframe containing following information:<br>
 - The minimum rating given by the user to the product.
 - Review summary keywords extracted for each product.
 - You may include any other relevant information you may feel like.<br>
-Your code should be well commented and also mention the brief reasoning behind all the steps and assumptions you have made in order to arrive to your solution. Save the resultant dataframe to json file. Also save the trained model used for this task.<br>
+<br>Your code should be well commented and also mention the brief reasoning behind all the steps and assumptions you have made in order to arrive to your solution. Save the resultant dataframe to json file. Also save the trained model used for this task.<br>
 #### SUBMISSION:<br>
 Submit your jupyter notebook or python file, resultant dataframe and saved model in a zipped file.
