@@ -1,0 +1,71 @@
+﻿NATURAL LANGUAGE PROCESSING – WORKSHEET 2
+
+1. Consider the below string:
+“please mail me at nitin12@gmail.com”
+Which of the following patterns can capture the mail id in above string?
+	'[a-z]*@[a-z]*.com'
+	'[/w]*@[/w]*.[/w]*'
+
+2. Which of the following is an quatifier in regular expressions in python?
+	‘*’
+	‘+’
+	‘?’
+
+3. Which of the following captures a pattern having @ symbol followed by 4 alphabets?
+	‘@.{4}’
+	‘@.{0,4}
+
+4. url = “http://www.telegraph.co.uk/formula-1/2017/10/28/mexican-grand-prix-2017-time-does-start-tv-channel-odds-lewisl/2017/05/12”
+Which of the following regexp patterns can be used to extract date from the above url?
+	'/(\d{4})/(\d{1,2})/(\d{1,2})/'
+
+5. Which of the following meta-sequence is to match all alphanumeric characters?
+	/w
+
+6. Which of the following regexp pattern which would extract all the hashtags from the below string?
+String = “sachin will love to play cricket at #lords in #ICCcricketworldcup #2k15”
+Import re
+re.findall(pattern, String)
+	pattern="#\w+"
+	pattern= '#[A-z0-9]+'
+
+7. Which of the following regexp pattern which would extract all the mentions (for example @aakash, @nk_154) from the below string?
+String = “I would like to thank @akshay_154, @nitin12, @asthaMishra_”
+Import re
+re.findall(pattern, String)
+	pattern="@[A-z]+"
+	pattern='@[A-z0-9]+'
+	pattern=‘@\w+’
+
+8. Which of the following operator is used to mark the start of the string in regular expressions?
+	B) ^
+
+9. Which of the following functions match the pattern only at the beginning of the string?
+	re.match()
+	re.search()
+
+10. Which of the following is same as “*” operator?
+	{0,}
+	{3,}
+
+11. Which of the following meta-sequences represent the digits?
+	\d
+
+12. Which distribution do the frequency of the words in a large document follow?
+	Chi-square
+
+13. Which of the following words cannot be reduced to their base words by stemming (PorterStemmer, Lancaster etc.) correctly?
+	eating
+	running
+
+14. Suppose we want to Replace Road with rd.
+street = '21 Ramakrishna Road'
+Which of the following statements can be used in python to do the task?
+	re.sub('Road', 'Rd', street)
+	re.sub(street, 'Rd')
+
+15. What will be the output of the following lines of code?
+import re
+re.search("aabbbbbb", "ab{3,5}?")
+	<re.match object; span = (1, 5), match = 'abbb'>
+	<re.match object; span = (1, 8), match = 'abbb'>
