@@ -1,0 +1,52 @@
+﻿MACHINE LEARNING – WORKSHEET 4
+
+1. Which of the following in sklearn library is used for hyper parameter tuning?
+A) GridSearchCV()
+
+2. In which of the below ensemble techniques trees are trained in parallel?
+D) All of the above
+
+3. In machine learning, if in the below line of code:
+sklearn.svm.SVC (C=1.0, kernel='rbf', degree=3)
+we increasing the C hyper parameter, what will happen?
+A) The regularization will increase
+
+4. Check the below line of code and answer the following questions:
+sklearn.tree.DecisionTreeClassifier(*, criterion='gini', splitter='best', max_depth=None, min_samples_split=2)
+Which of the following is true regarding max_depth hyper parameter?
+A) It regularizes the decision tree by limiting the maximum depth up to which a tree can be grown.
+
+5. Which of the following is true regarding Random Forests?
+C) In case of classification problem, the prediction is made by taking mode of the class labels predicted by the component trees.
+
+6. What can be the disadvantage if the learning rate is very high in gradient descent?
+C) Both of them
+
+7. As the model complexity increases, what will happen?
+A) Bias will increase, Variance decrease
+
+8. Suppose I have a linear regression model which is performing as follows:
+Train accuracy=0.95
+Test accuracy=0.75
+Which of the following is true regarding the model?
+B) model is overfitting
+
+9. Suppose we have a dataset which have two classes A and B. The percentage of class A is 40% and percentage of class B is 60%. Calculate the Gini index and entropy of the dataset.
+
+10. What are the advantages of Random Forests over Decision Tree?
+Random forests are a strong modeling technique and much more robust than a single decision tree. They aggregate many decision trees to limit overfitting as well as error due to bias and therefore yield useful results.
+
+11. What is the need of scaling all numerical features in a dataset? Name any two techniques used for scaling.
+If we don't scale the data, the model will give more weightage to certain independant variable than it is suppossed to.
+Standard Scaler and Robust Scaler are two scaling techniques.
+
+12. Write down some advantages which scaling provides in optimization using gradient descent algorithm.
+
+13. In case of a highly imbalanced dataset for a classification problem, is accuracy a good metric to measure the performance of the model. If not, why?
+
+14. What is “f-score" metric? Write its mathematical formula.
+
+15. What is the difference between fit(), transform() and fit_transform()?
+fit() will fit the data into a model
+transform() will give the output by the model as per the data that was fitted
+fit_transform() will fit the data and give the output in one line of code using the model
