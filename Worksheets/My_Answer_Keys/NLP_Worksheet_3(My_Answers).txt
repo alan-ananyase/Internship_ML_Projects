@@ -1,0 +1,58 @@
+NLP WORKSHEET-3
+1. Which of the following reduce a word to its base form by cutting off the suffix?
+A) Lancaster Stemmer B) Porter Stemmer
+C) Snowball Stemmer
+
+2. We need to perform stemming and lemmatization so that:
+A) All the words can be reduced to their base form
+
+3. Stemming and Lemmatization belongs to which of the following step in NLP?
+C) Lexical Processing
+
+4. Which of the following is/are example of shallow parsing?
+A) POS tagging B) Chunking
+
+5. Which of the following are true regarding Lexicon Based taggers?
+B) These taggers also use tag of the previous word to find the tag of the word.
+C) These taggers take in to account the context in which the word is used to assign a tag.
+
+6. Which of the following taggers uses predefined rules to assign tags?
+B) Stochastic Rule taggers
+C) Rule Based Taggers
+
+7. Which of the following is /are true regarding HMM based POS tagger?
+B) It uses tag of only the previous word to determine the tag of the current word.
+
+8. What does the transition probability refer in to HMM bases POS tagging algorithm?
+A) The transition probabilities refer to probabilities of transitioning from one tag to another tag.
+
+9. Which of the following are terminal symbols in the following Context-Free Grammar? S -> NP VP
+NP -> DT N| N| N PP VP -> V| V NP
+N -> ‘man’| ‘bear’ V -> ‘ate’
+DT -> ‘the’| ‘a’
+B) ‘ate’
+C) VP D) NP
+
+10. In which of the cases Hidden Markov Model can be used?
+B) POS tagging
+C) Word Tokenization
+
+11. Which of the following is/are used to get the grammatical construction of the sentence?
+A) POS tagging D) HMM based POS tagging
+
+12. Which of the following are the approaches of constituency parsing?
+A) Top-Down Parsing B) Bottom-up Parsing
+
+13. Which of the following is true regarding Top-Down parsing?
+A) It starts with start symbol S.
+C) It starts with sentence and then we reduce it to the S symbol.
+
+14. Which of the following statements are true regarding shift reduce parser algorithm?
+A) We start with start symbol S, then we use production rules of CFG and reach the sentence in the end.
+C) In this algorithm we start from the sentence, take one word at a time from the sentence shift it to the stack or reduce the words present in the stack by using CFG rules, until we reach the S start symbol.
+
+15. Which of the following are true regarding Chomsky Normal Form?
+B) The production rules can be written only in a particular way as defined by a set of rules.
+
+16. In Which of the following text processing technique we will remove stopwords as a preprocessing?
+C) Count-vectorization to create BOW for lexical level analysis.
