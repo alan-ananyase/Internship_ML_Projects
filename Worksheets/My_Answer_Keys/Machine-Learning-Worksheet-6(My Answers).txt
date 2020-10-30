@@ -1,0 +1,38 @@
+MACHINE LEARNING – WORKSHEET 6
+1. Look at the figure given below and answer the following question:
+Circles represent class A data points. Triangles represent class B data points. The red circle and triangle represent the support vectors data points. The green line represents the classifier boundary. Now Suppose we remove the red circle data point from the data. Now Will the classifier boundary change after removing the red circle data point?
+A) Yes
+
+2. Look at the figure given below and answer the following question:
+In the above figure, Circles represent class A data point, Triangles represent class B data point. The red, green, maroon lines are three different classifiers. Which of these classifier is most likely best classifier on unseen data?
+A) Red
+
+3. Which of the following are disadvantages of using Hard Margin SVM classifier?
+B) They cannot be used when the data is not completely linearly separable while allowing no errors
+
+4. Which of the following statements are true regarding maximal margin classifier?
+B) It’s the classifier for which the margin length or the distance between the closest data-point on either side of
+the classifier and the classifier is maximized.
+
+5. Look at the figure given below and answer the following question:
+In the above figure, Circles represent class A data point, Triangles represent class B data point. Now looking at the above data, can a hard margin SVM classifier be used for classification?
+A) Yes
+
+6. Which of the following statements are true regarding soft margin SVM classifier?
+A) They are less sensitive to outliers and can be used even in their presence
+C) They allow some degree of errors or misclassification
+
+7. Which of the following statements are true regarding SVMs?
+A) They take the data from lower dimensional space to some higher dimensional space in case the data is not
+likely to be linearly separable
+B) They use the kernel tricks to escape the complex computations required to transform the data
+
+8. Which of the following Statements are true regarding the Kernel functions used in SVM?
+A) These functions gives value of the dot product of pairs of data-points in the desired higher dimensional
+space without even explicitly converting the whole data in to higher dimensional space
+
+9. How can SVM be classified?
+C) It is a model trained using supervised learning. It can be used for classification and regression.
+
+10. The quality of an SVM model depends upon:
+D) All of the above
