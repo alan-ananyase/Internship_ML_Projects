@@ -1,0 +1,70 @@
+1.Bernoulli random variables take (only) the values 1 and 0.
+a) True
+
+2.Which of the following theorem states that the distribution of averages of iid variables, properly normalized,
+becomes that of a standard normal as the sample size increases?
+a) Central Limit Theorem
+
+3.Which of the following is incorrect with respect to use of Poisson distribution?
+b) Modeling bounded count data
+
+4.Point out the correct statement
+d) All of the mentioned
+
+5.__________ random variables are used to model rates
+c) Poisson
+
+6.Usually replacing the standard error by its estimated value does change the CLT.
+b) False
+
+7.Which of the following testing is concerned with making decisions using data?
+b) Hypothesis
+
+8.Normalized data are centered at ___ and have units equal to standard deviations of the original data.
+q)0
+
+9.Which of the following statement is incorrect with respect to outliers?
+c) Outliers cannot conform to the regression relationship
+
+10.What do you understand by the term Normal Distribution?
+Normal distribution, also known as the Gaussian distribution, is a probability distribution
+that is symmetric about the mean, showing that data near the mean are more frequent in
+occurrence than data far from the mean. In graph form, normal distribution will appear as a bell curve.
+
+11.How do you handle missing data? What imputation techniques do you recommend?
+There are many ways one could handle missing data 
+Some specific ways of handling this with imputation are :
+Imputation with mean : Missing data is replaced by mean of the column
+Imputation with median : Missing data is replaced by mean of the column
+Imputation with Mode: Missing data is replaced with mode of the column
+Imputation with linear regression : With real valued data, this is a common technique. 
+The missing value is replaced by performing linear regression based on the other feature values.
+Random Forest : Random forest is a non-parametric imputation method applicable to various variable
+types that works well with both data missing at random and not missing at random. 
+Random forest uses multiple decision trees to estimate missing values and outputs 
+\OOB (out of bag) imputation error estimates. 
+
+The following are common methods:
+1.Mean imputation. Simply calculate the mean of the observed values for that 
+variable for all individuals who are non-missing
+Substitution
+2.Hot deck imputation
+3.Cold deck imputation
+4.Regression imputation
+5.Stochastic regression imputation
+6.Interpolation and extrapolation
+
+12.What is A/B testing
+A/B testing is basically statistical hypothesis testing, or, in other words, statistical inference. 
+It is an analytical method for making decisions that estimates population parameters based on sample statistics
+
+13.Is mean imputation of missing data acceptable practice?
+
+14.What is linear regression in statistics?
+Simple linear regression is a statistical method that allows us to summarize and 
+study relationships between two continuous (quantitative) variables:
+One variable, denoted x, is regarded as the predictor, explanatory, or independent variable.
+The other variable, denoted y, is regarded as the response, outcome, or dependent variable
+
+15.What are the various branches of statistics
+The two main branches of statistics are descriptive statistics and inferential statistics.
