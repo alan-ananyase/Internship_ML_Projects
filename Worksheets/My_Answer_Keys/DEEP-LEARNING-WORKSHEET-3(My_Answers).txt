@@ -1,0 +1,79 @@
+DEEP-LEARNING-WORKSHEET-3
+1. Which of the following is true about model capacity (where model capacity means the ability of neural network to approximate complex functions)?
+B) As number of hidden layers increase, model capacity increases
+
+2. Batch Normalization is helpful because?
+C) It normalizes (changes) all the input before sending it to the next layer
+
+3. What if we use a learning rate that’s too large?
+A) Network will not converge
+
+4. What are the factors to select the depth of neural network?
+i) Type of neural network (e.g. MLP, CNN etc.)
+ii) Input data
+iii) Computation power, i.e. Hardware capabilities and software capabilities
+iv) Learning Rate
+v) The output function to map
+D) All of these
+
+5. Suppose you have inputs as x, y, and z with values -2, 5, and -4 respectively. You have a neuron ‘q’ and neuron ‘f’ with functions:
+q = x + y
+f = q * z
+Graphical representation of the functions is as follows:
+What is the gradient of F with respect to x, y, and z? (use chain rule of derivatives to find the solution)
+C) (-4, -4, 3)
+
+6. Which of the following statement is the best description of early stopping?
+B) Simulate the network on a test dataset after every epoch of training. Stop training when the generalization
+error starts to increase
+
+7. Which gradient descent technique is more advantageous when the data is too big to handle in RAM simultaneously?
+B) Stochastic Gradient Descent
+
+8. Consider the scenario. The problem you are trying to solve has a small amount of data. Fortunately, you have a pre-trained neural network that was trained on a similar problem. Which of the following methodologies would you choose to make use of this pre-trained network?
+A) Freeze all the layers except the last, re-train the last layer
+
+Q9 and Q10 are MCQs with one or more correct answers. Choose all the correct options.
+9. Which of the following neural network training challenge can be solved using batch normalization?
+B) Training is too slow
+C) Restrict activations to become too high or low
+
+10. For a binary classification problem, which of the following activations may be used in output layer?
+B) sigmoid
+C) softmax
+
+11.What will happen if we do not use activation function in artificial neural networks?
+If we do not apply a Activation function then the output signal would simply be a simple linear function.
+A linear function is just a polynomial of one degree. a linear equation is easy to solve but they 
+are limited in their complexity and have less power to learn complex functional mappings from data. 
+A Neural Network without Activation function would simply be a Linear regression Model, which has limited 
+power and does not perform good most of the times.
+
+12.How does forward propagation and backpropagation work in deep learning
+Forward propagation (or forward pass) refers to the calculation and storage of intermediate variables 
+(including outputs) for a neural network in order from the input layer to the output layer.
+Backpropagation refers to the method of calculating the gradient of neural network parameters. 
+In short, the method traverses the network in reverse order, from the output to the input layer, 
+according to the chain rule from calculus. The algorithm stores any intermediate variables (partial derivatives) 
+required while calculating the gradient with respect to some parameters.
+
+13.Explain briefly the following variant of Gradient Descent: Stochastic, Batch, and Mini-batch?
+Stochastic Gradient Descent : Stochastic gradient descent, often abbreviated SGD, is a variation of the gradient descent algorithm 
+that calculates the error and updates the model for each example in the training dataset.
+The update of the model for each training example means that stochastic gradient descent is often called an online machine learning algorithm
+Batch Gradient Descent : Batch gradient descent is a variation of the gradient descent algorithm that calculates the error for each example in the training dataset, 
+but only updates the model after all training examples have been evaluated.One cycle through the entire training dataset is called a training epoch. 
+Therefore, it is often said that batch gradient descent performs model updates at the end of each training epoch
+Mini-Batch Gradient Descent : Mini-batch gradient descent is a variation of the gradient descent algorithm that splits the training dataset into 
+small batches that are used to calculate model error and update model coefficients.Implementations may choose to sum the gradient 
+over the mini-batch which further reduces the variance of the gradient
+
+14.What are the main benefits of Mini-batch Gradient Descent?
+a.The model update frequency is higher than batch gradient descent which allows for a more robust convergence, avoiding local minima.
+b.The batched updates provide a computationally more efficient process than stochastic gradient descent.
+c.The batching allows both the efficiency of not having all training data in memory and algorithm implementations.
+
+15.What is transfer learning?
+Transfer learning is a machine learning technique where a model trained on one task is re-purposed on a second related task.
+In transfer learning, we first train a base network on a base dataset and task, and then we repurpose the learned features, or transfer them, to a second target network to be trained on a target dataset and task. 
+This process will tend to work if the features are general, meaning suitable to both base and target tasks, instead of specific to the base task.
