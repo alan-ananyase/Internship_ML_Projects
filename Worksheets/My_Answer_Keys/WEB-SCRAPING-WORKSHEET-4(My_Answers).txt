@@ -1,0 +1,43 @@
+WORKSHEET
+WEB SCRAPING – WORKSHEET 4
+1. Which of the following functions can be used to get an element from webpage when we know the Name attribute of the element?
+B) get_element_by_name()
+C) find_element_by_name()
+2. Which of the following functions can be used when you want to locate an element by tag name?
+C) find_element_by_tag_name()
+3. In what type of Waits, a WebDriver waits for a certain condition to occur before proceeding further with execution.
+B) Explicit wait
+4. Which of the following is an expected condition in selenium (python)?
+D) All of the above
+5. Which of the following is a disadvantage of html5lib parser in beautiful soup?
+B) Very Slow
+C) External Pyhton Dependency
+6. What are the advantages of using Scrapy over Selenium for web-scraping?
+A) For large data Scrapy is faster than selenium
+B) It supports javascript better than Selenium
+7. Which of the following is (are) true regarding Scrapy?
+D) both A & B
+8. Full form of HTML:
+C) Hyper Text Markup Language
+9. Which among the following is the correct syntax for parsing a html page?
+B) soup=BeautifulSoup(html_doc,’html.parser’)
+10. Which among the following is not a valid parser in BeautifulSoup?
+D) “html-xml”
+11. Which of the following functions is used to go to the next element in the page?
+D) None of the above
+12. Which of the following functions are used to iterate over an element’s siblings that precede it in the tree?
+D) None of the above
+WORKSHEET
+13. Which of the following is an argument used in find_all() which tells Beautiful Soup to stop gathering results after it’s found a certain number.
+C) limit
+14. How would you set the recursive argument in find_all() if you want Beautiful Soup to consider only the direct children.
+B) recursive = False
+
+15. What is the difference between find() and find_all() in Beautiful Soup?
+find() function takes the name of the tag as string input and returns the first found match of the particular tag from the webpage response
+Syntax
+find(name, attrs, recursive, string, **kwargs)
+find_all is used to extract all the occurrences of a particular tag from the page response.
+find_all returns an object of ResultSet which offers index based access to the result of found occurrences and can be printed using a for loop
+Syntax
+find_all(name, attrs, recursive, string, limit, **kwargs)
