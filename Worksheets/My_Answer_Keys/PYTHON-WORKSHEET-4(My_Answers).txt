@@ -1,0 +1,87 @@
+Q1 to Q8 have only one correct answer. Choose the correct option to answer your question.
+1. Which of the following function is used to determine the length of a string in python?
+B) len()
+2. Python is?
+B) interpreted
+3. What will be the output of the following?
+a = [1,2,3,2,1]
+a.pop(2)
+print(a)
+B) [1,2,2,1]
+4. If alist = [10,20,30,40,50,60], then alist[ : : -3] = ?
+D) [60,30]
+5. Which of the following will give the reverse of list ‘a’:
+C) a[ : :-1]
+6. If a = True, b = False and c = True. Then what will be the output of following code:
+if not a or b:
+print("Eena")
+elif not a or not b and c:
+print("Meena")
+elif not a or b or not b and a:
+print("Deeka")
+else:
+print("Domniqaa")
+B) Meena
+7. What is the output of the following?
+print([x+y for y in [“Hello ”, “Adios ”] for x in [“World ”, “Python ”]])
+C) [“World Hello ”, “Python Hello ”, “World Adios ”, “Python Adios ”]
+8. Str1 = “Hello Python”. What will be the output of : print(str1.find(‘o’))
+A) 4
+Q9 and Q10 have multiple correct answers. Choose all the correct options to answer your question.
+9. Which of the following is(are) correct method(s) to join two lists l1 and l2?
+A) l1+l2 D) l1.extend(l2)
+WORKSHEET
+10. s = “pyworld”. Select all of the following which give same results? 
+A) s[0]+s[-1]
+B) s[ : : -1][-1] + s[len(s)-1] 
+D) s[ : : -1][ : : -6]
+
+Q11 to Q13 are subjective questions, answer them briefly
+11. Differentiate between a compiler and an interpreter? Which of them is used in python language?
+Interpreter translates just one statement of the program at a time into machine code.
+Compiler scans the entire program and translates the whole of it into machine code at once.
+An interpreter takes very less time to analyze the source code. However, the overall time to execute the process is much slower
+A compiler takes a lot of time to analyze the source code. However, the overall time taken to execute the process is much faster.
+An interpreter does not generate an intermediary code. Hence, an interpreter is highly efficient in terms of its memory
+A compiler always generates an intermediary object code. It will need further linking. Hence more memory is needed.
+Keeps translating the program continuously till the first error is confronted. If any error is spotted, it stops working and hence debugging becomes easy.
+A compiler generates the error message only after it scans the complete program and hence debugging is relatively harder while working with a compiler
+Interpreters are used by programming languages like Ruby and Python for example
+Compliers are used by programming languages like C and C++ for example.
+Interpreters are used in Python Language.
+12. What is the purpose of PYTHONPATH environment variable?
+PYTHONPATH is an environment variable which you can set to add additional directories where python will look for modules and packages
+The only reason to set PYTHONPATH is to maintain directories of custom Python libraries that you do not want to install in the global default location (i.e., the site-packages directory).
+13. How will you remove all the leading and trailing whitespaces in a string in python? Give one example.
+Python String strip() function will remove leading and trailing whitespaces. 
+If we want to remove only leading or trailing spaces, use lstrip() or rstrip() function instead.
+>>> s = '   abd cde   '
+>>> s.strip()
+'abd cde'
+
+Q14 and Q15 are programming questions. Answer them in Jupyter Notebook.
+14. Write a python program to represent a user entered number in expanded form.
+For eg: user_input = 12345
+Output = 1*10000 + 2*1000 + 3*100 + 4*10 + 5*1
+def function(num):
+ digits = str(num) # convert number to string
+ output = []
+ for i, digit in enumerate(digits):
+   output.append("(" + digit + "x10^" + str(len(digits)-i-1) + ")")
+ return " + ".join(output)
+
+15. Write a python program to determine whether the number entered by the user is an Armstrong number or not?
+
+num = int(input("Enter a number: "))  
+sum = 0  
+temp = num  
+  
+while temp > 0:  
+   digit = temp % 10  
+   sum += digit ** 3  
+   temp //= 10  
+  
+if num == sum:  
+   print(num,"is an Armstrong number")  
+else:  
+   print(num,"is not an Armstrong number")
