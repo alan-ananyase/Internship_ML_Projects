@@ -1,0 +1,33 @@
+WORKSHEET
+STATISTICS – WORKSHEET 3
+Q1 to Q15 are MCQs with one or more than one correct answer. Choose all the correct options.
+1. Using a goodness of fit, we can assess whether a set of obtained frequencies differ from a set of _____ frequencies.
+D) Expected
+2. Chi-square is used to analyse:
+C) Frequencies
+3. What is the mean of a Chi Square distribution with 6 degrees of freedom?
+B) 12
+4. Which of these distributions is used for a testing hypothesis?
+A) Normal distribution
+5. Which of the following distributions is Continuous?
+C) F-Distribution
+6. A statement made about a population for testing purpose is called?
+B) Hypothesis
+7. If the assumed hypothesis is tested for rejection considering it to be true is called?
+A) Null Hypothesis
+8. If the Critical region is evenly distributed, then the test is referred as?
+A) Two tailed
+9. Alternative Hypothesis is also called as?
+B) Research Hypothesis
+10. In a Binomial Distribution, if ‘n’ is the number of trials and ‘p’ is the probability of success, then the mean value is given by ___________
+A) np
+11. Binomial Distribution is a ___________.
+B) Discrete distribution
+12. If ‘p’, ‘q’ and ‘n’ are probability pf success, failure and number of trials respectively in a Binomial Distribution, what is its Standard Deviation?
+D) √npq----
+13. A Null Hypothesis has Level of Significance 9%. For what values of Level of Significances it will be rejected?
+B) 0.009
+14. The range of Level of Significance lies between ____________.
+D) 0 and 1
+15. The effect of rejection of a hypothesis with decrease in sample size ____________.
+B) increases
