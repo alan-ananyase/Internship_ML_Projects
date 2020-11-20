@@ -1,0 +1,45 @@
+WORKSHEET
+MACHINE LEARNING – WORKSHEET 7
+All the questions in this exercise have one or more than one correct answers. Choose all the correct options to answer your questions.
+1. Which of the following statements are true regarding SVMs?
+A) SVMs use hyperplanes as decision boundary for classification.
+B) SVMs uses kernel functions to avoid computational load of converting the whole dataset in to higher
+dimensional space where the data is linearly separable.
+D) SVMs use hard margin classifier.
+2. Consider the radial basis kernel function given below and answer the following question:
+k(x, x0) = exp(−γ||x − x0 ||2)
+In the above figure we have two curves for two radial basis function with different values of gammas. Which
+of these curves has higher values of gamma?
+D) cannot be determined from the curve
+3. Which of these statements are true regarding the RBF kernel of SVM?
+A) The RBF is used to find the linear classifier for the data in to infinite dimensional space.
+C) A very high value of gamma may lead to overfitting.
+4. Consider the following graph and answer the question given below:
+Consider the above figure where triangles represent class A data points and rectangles represent Class B.
+Which of the following classifier can be used here?
+B) A Soft Margin Linear classifier
+WORKSHEET
+5. Consider the following image and answer the question:
+What will happen if we decrease the value of C, the soft margin constant?
+B) The margin width will Increase
+6. Consider the following image and answer the question:
+Figure A: Figure B:
+In the above figure red circles represent class A data points and plus sign represents Class B. Both of the figures
+are on the same data. Among the above given figure-A and Figure-B, which of these figure have higher value
+of C hyperparameter?
+C) Both have same value
+7. In the following figures red circles represent Class A data points and plus represent Class B data points. We are using a linear kernel with Degrees D1, D2 and D3 as shown in the figures A, B and C respectively.
+Fig A: D1 Degree polynomial Fig B: D2 degree Fig C: D3 degree
+margin
+margin
+WORKSHEET
+Now which of the following is true regarding the degrees?
+C) D3>D2>D1
+8. In the following figures red circles represent Class A data points and plus represent Class B data points. In the below figures we are using RBF kernel with varying degrees Gamma:
+Gamma 1 Gamma2
+Now choose the correct options:
+C) Gamma2 > Gamma 1
+9. Let us assume you are using RBF kernel in SVM with a very high Gamma value. What does this signify?
+B) The model would consider only the points close to the hyperplane for modelling
+10. What would happen when you use very small C (C~0)?
+A) A large number of misclassification would happen
