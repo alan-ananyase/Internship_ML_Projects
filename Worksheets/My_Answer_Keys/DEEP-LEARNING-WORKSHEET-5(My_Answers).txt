@@ -1,0 +1,55 @@
+DEEP LEARNING – WORKSHEET 5
+Q1 to Q8 are MCQs with only one correct answer. Choose the correct option.
+1. Which of the following are advantages of batch normalization?
+D) All of the above
+2. Which of the following is not a problem with sigmoid activation function?
+A) Sigmoids do not saturate and hence have faster convergence
+3. Which of the following is not an activation function?
+D) None of the above
+4. The tanh activation usually works better than sigmoid activation function for hidden units because the mean of its output is closer to zero, and so it centers the data better for the next layer. True/False?
+A) True
+5. In which of the weights initialisation techniques, does the variance remains same with each passing layer?
+B) Xavier Initialisation
+6. Which of the following is main weakness of AdaGrad?
+A) learning rate shrinks and becomes infinitesimally small
+7. In order to achieve right convergence faster, which of the following criteria is most suitable?
+B) momentum must be high and learning rate must be low
+8. When is an error landscape is said to be poor(ill) conditioned?
+A) when it has many local minima
+Q9 and Q10 are MCQs with one or more correct answers. Choose all the correct options.
+9. Which of the following Gradient Descent algorithms are adaptive?
+A) ADAM
+C) NADAM D) RMS Prop.
+10. When should an optimization function (gradient descent algorithm) stop training:
+C) when it reaches global minimum
+D) when it reaches a local minima which is similar to global minima (i.e. which has very less error distance with global minima)
+11.What are convex, non-convex optimization?
+A convex optimization problem is a problem where all of the constraints are convex functions, 
+and the objective is a convex function if minimizing, or a concave function if maximizing.
+Linear functions are convex, so linear programming problems are convex problems.Conic optimization problems,the natural extension of linear programming problems are also convex problems.
+In a convex optimization problem, the feasible region-the intersection of convex constraint functions is a convex region.
+A non-convex optimization problem is any problem where the objective or any of the constraints are non-convex.
+Such a problem may have multiple feasible regions and multiple locally optimal points within each region.  It can take time exponential in the 
+number of variables and constraints to determine that a non-convex problem is infeasible, that the objective function is unbounded, 
+or that an optimal solution is the "global optimum" across all feasible regions
+12. What do you mean by saddle point? Answer briefly.
+Saddle point or minimax point is a point on the surface of the graph of a function where the slopes (derivatives) in orthogonal directions 
+are all zero (a critical point),but which is not a local extremum of the function.
+An example of a saddle point is when there is a critical point with a relative minimum along one axial direction (between peaks) 
+and at a relative maximum along the crossing axis.However,a saddle point need not be in this form.
+13. What is the main difference between classical momentum and Nesterov momentum? Explain briefly.
+The difference between Momentum method and Nesterov Accelerated Gradient is in gradient computation phase.
+In Momentum method, the gradient was computed using current parameters θ𝑡
+whereas in Nesterov Accelerated Gradient, we apply the velocity vt to the parameters θ to compute interim parameters θ̃ .
+We then compute the gradient using the interim parameters.
+The Momentum method can be very slow since the optimization path taken exhibits large oscillations.
+In Nesterov Accelerated Gradient case, you can view it like peeking through the interim parameters where the added velocity will lead the parameters.
+If the velocity update leads to bad loss, then the gradients will direct the update back towards θ𝑡.
+This help Nesterov Accelerated Gradient to avoid the oscillations
+When the learning rate η is relatively large, Nesterov Accelerated Gradients allows larger decay rate α than Momentum method, while preventing oscillations.
+14. What is Pre initialisation of weights? Explain briefly.
+The aim of weight initialization is to prevent layer activation outputs from exploding or vanishing during the course of a forward pass through a deep neural network.
+If either occurs, loss gradients will either be too large or too small to flow backwards beneficially, and the network will take longer to converge, if it is even able to do so at all
+15. What is internal covariance shift in Neural Networks?
+Internal Covariate Shift as the change in the distribution of network activations due to the change in network parameters during training.
+In neural networks, the output of the first layer feeds into the second layer, the output of the second layer feeds into the third, and so on
