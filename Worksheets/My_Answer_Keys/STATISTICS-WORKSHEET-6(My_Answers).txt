@@ -1,0 +1,39 @@
+Statistics– WORKSHEET 6
+
+1. Which of the following is the correct formula for total variation?
+b) Total Variation = Residual Variation + Regression Variation
+2. Collection of exchangeable binary outcomes for the same covariate data are called outcomes.
+c) binomial
+3. How many outcomes are possible with bernoulli trial?
+a) 2
+4. If Ho is true and we reject it, then it is called:
+(a) Type-I error
+5. Level of significance is also called:
+(b) Size of the test
+6. The chance of rejecting a true hypothesis decreases when sample size:
+(b) Increases
+7. Which of the following testing is concerned with making decisions using data?
+(b) Hypothesis
+8. What is the purpose of multiple testing in statistical inference?
+(d) All of the mentioned
+9. Normalized data is centered at and has unit equal to standard deviations of the original data.
+(a) 0
+
+10. What Is Bayes' Theorem?
+Bayes’ theorem is used to find conditional probability. Conditional probability is the probability of an event happening, given that it has some relationship to one or more other events.
+For example, the probability of getting a parking space is connected to the time of day you park, where you park, and what activities are going on at any time. Bayes’ theorem gives you the actual probability of an event given information about tests.
+11. What is z-score?
+Z-score is a numerical measurement that describes a value's relationship to the mean of a group of values. Z-score is measured in terms of standard deviations from the mean.
+If a Z-score is 0, it indicates that the data point's score is identical to the mean score. A Z-score of 1.0 would indicate a value that is one standard deviation from the mean.
+Z-scores may be positive or negative, with a positive value indicating the score is above the mean and a negative score indicating it is below the mean.
+12. What is t-test?
+A t-test is a type of inferential statistic used to determine if there is a significant difference between the means of two groups which may be related in certain features. It is mostly used when the data sets, like the data set recorded as the outcome from flipping a coin 100 times, would follow a normal distribution and may have unknown variances.
+A t-test is used as a hypothesis testing tool, which allows testing of an assumption applicable to a population. A t-test looks at the t-statistic, the t-distribution values, and the degrees of freedom to determine the statistical significance.
+13. What is a percentile?
+Percentiles indicate the percentage of scores that fall below a particular value. They tell you where a score stands relative to other scores. For example, a person with an IQ of 120 is at the 91st percentile, which indicates that their IQ is higher than 91 percent of other scores.
+Percentiles are a great tool to use when you need to know the relative standing of a value. Percentile scores range from the 1st through 99th percentile, indicating the percentage of scores in the comparison group which are lower than the test taker’s score.
+14. What is ANOVA?
+Analysis of variance (ANOVA) is an analysis tool used in statistics that splits an observed aggregate variability found inside a data set into two parts: systematic factors and random factors. 
+The systematic factors have a statistical influence on the given data set, while the random factors do not. ANOVA test is used to determine the influence that independent variables have on the dependent variable in a regression.
+15. How can ANOVA help?
+An ANOVA test is a way to find out if survey or experiment results are significant. In other words, they help you to figure out if you need to reject the null hypothesis or accept the alternate hypothesis.
