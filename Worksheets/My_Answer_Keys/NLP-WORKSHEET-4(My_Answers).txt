@@ -1,0 +1,52 @@
+NLP – WORKSHEET 4
+1. Which of the following are true regarding Context Free Grammars?
+A) It consists of a set of production rules
+C) These grammars are free of context in which they are used, they will remain same regardless of the context
+in which they are used.
+2. Advantages of using PCFG over CFG are:
+A) All the production rules in PCFG has probability associated with them while in CFG we do not have
+Probability of a production rule.
+B) With PCFG we can find the most probable parse tree of a sentence which we cannot find CFG.
+3. The problem with constituent parsing is:
+A) The constituent parsing is more complex
+B) The constituent parsing does not work with free word order languages where same meaning can be depicted
+with different word order.
+4. In order to deal with free word order languages what type of parsing is suitable?
+C) Dependency Parsing
+5. Which of the following are true regarding Dependency Parsing?
+A) It establish dependencies between words of a sentence
+B) The dependencies are established in terms of subject-object-verb and other dependencies.
+6. Which of the following are techniques for Named Entity Recognition?
+A) Chunking
+C) unigram chunker D) bigram chunker
+7. Which of the following statements are true regarding Unigram chunker for NER?
+A) It uses the POS tag of a word and find the most probable IOB label for that POS tag
+C) It uses the POS tags of the required word as well as previous word to assign IOB label
+8. Which of the following statements are true regarding Unigram chunker for NER?
+A) It assigns POS Tags to the words in a sentence
+B) It assigns IOB entity label to a word based on the POS tag of the word
+9. Which of the following statements are true regarding Bigram chunker for NER?
+A) It is a sequential modeling process for assigning POS tags to the word
+B) It uses a dictionary of IOB labels to assign a IOB entity label
+D) The IOB label which occurs most frequently for a given pair of POS tags is assigned
+WORKSHEET
+10. Which of the following technique uses a dictionary to extract an entity?
+A) Unigram chunker B) Bigram chunker
+11. Which of the following are preprocessing steps in Information Extraction Systems?
+A) Word Tokenization
+D) POS tagging
+12. Which of the following cases require NER (Named Entity Recognition)?
+B) Chat Bot creation
+C) A flight booking system which books flights for a customer according to information given by him in query
+13. Which of the following is true regarding Top-Down parsing?
+D) All of the above
+14. Consider the following string and tell what should be the pattern to extract all #tags
+String = “there should be justice for #sushant #singh @rindia”
+Import re
+Re.search(pattern, string)
+A) pattern = “#\w*”
+15. Consider the following string and tell what should be the pattern to extract the mention (@rindia) only
+String = “there should be justice for #sushant #singh @rindia”
+Import re
+Re.search(pattern, string)
+C) pattern = “@\w*”
