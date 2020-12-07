@@ -1,0 +1,95 @@
+Q1 to Q10 have only one correct answer. Choose the correct option to answer your question.
+1. Which of the following operators can be used to concatenate two lists?
+C) +
+2. Consider the below two statements and select the correct option accordingly
+i. List is an immutable data type like strings.
+ii. Lists are two dimenionsal data-structures.
+D) i-False, ii-True
+3. What will be the output of the following list comprehension?
+L=[x.upper() for x in [“abc”,” rahul”,” nitin”]]
+B) [“ABC”,” RAHUL”,” NITIN”]
+4. What will be the output of the following list comprehension?
+L = [x for x in [1,2,3,4,5,6] if x%2==0]
+D) [2,4,6]
+5. What will be the output of the following line of code?
+A = [2,3,45,6,8,9]
+B = A[1:4]
+C = [ x for x in B if x%2==0]
+C) [6]
+6. What will be the output of following lines of code?
+a = {1,4,6,8}
+b = {2,4,6,8}
+c = {1,3,5,7}
+print(a.intersection(a.difference(b)))
+D) None of the above
+7. What will be the output of the following lines of code?
+A = {1,22,22,3}
+print(a)
+D) None of the above
+8. By which of the following ways you can access the set {1,2,3} in the following line of code?
+a=["asd",["d",{1,2,3},3],23]
+C) a[1][1]
+9. Which of the following is not a method of sets in python?
+D) None of the above
+10. Which of the following is true with respect to sets in python? (More Than One options may be correct. Mark all the correct options)
+B) no two elements of a set can be same
+C) sets are immutable
+
+11. List any two major differences between lists and sets in python.
+List is a type of ordered collection that maintains the elements in insertion order while Set is a type of unordered collection so elements are not maintained any order. 
+List are mutable i.e it can be converted into another data type and can store any data element in it. Sets are mutable, however, only immutable objects can be stored in it
+List allows duplicates while Set doesn't allow duplicate elements
+12. write a python program to square the elements of a list by using list comprehension.
+numbers = [1, 2, 3, 4, 5]
+
+squared_numbers = [number ** 2 for number in numbers]
+
+print(squared_numbers)
+[1, 4, 9, 16, 25]
+13. Write a pyhton program to drop duplicate elements from a list of numbers.
+a = [10,20,30,20,10,50,60,40,80,50,40]
+
+dup_items = set()
+uniq_items = []
+for x in a:
+    if x not in dup_items:
+        uniq_items.append(x)
+        dup_items.add(x)
+
+print(dup_items)
+{40, 10, 80, 50, 20, 60, 30}
+14. Take two sets of numbers and try implementing the set operations - intersection, union, difference and symmetric_difference between them.
+a = set([1, 2, 3])
+b = set([2, 3, 4])
+result = a.intersection(b)
+print(result)
+{2, 3}
+a = set([1, 2, 3])
+b = set([2, 3, 4])
+result = a.union(b)
+print(result)
+{1, 2, 3, 4}
+a = set([1, 2, 3])
+b = set([2, 3, 4])
+result = a.difference(b)
+print(result)
+{1}
+a = set([1, 2, 3])
+b = set([2, 3, 4])
+result = a.symmetric_difference(b)
+print(result)
+{1, 4}
+
+15. Write a python program to add the elements of a set.
+# set of vowels
+vowels = {'a', 'e', 'i', 'u'}
+
+# adding 'o'
+vowels.add('o')
+print('Vowels are:', vowels)
+
+# adding 'a' again
+vowels.add('a')
+print('Vowels are:', vowels)
+Vowels are: {'i', 'u', 'o', 'a', 'e'}
+Vowels are: {'i', 'u', 'o', 'a', 'e'}
