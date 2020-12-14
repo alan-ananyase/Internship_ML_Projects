@@ -1,0 +1,37 @@
+NLP – WORKSHEET 5
+All the questions in this worksheet have one or more than one correct answers. Choose all the correct options to answer your questions.
+1. Which of the following NLP tasks are done by sequential labelling technique?
+D) All of the above
+2. Word ambiguity is major challenge in NLP. What type of ambiguity exists in the word sequence “Time flies”?
+A) Semantic
+3. In NLP many words have more than one meanings but we have to select the meaning which makes the most sense in the context in which it was used. This problem of finding the most likely sense can be resolved by:
+A) Shallow Semantic Analysis
+4. Which of the following techniques are used to reduce inflected words to their base form?
+A) Lemmatization B) Stemming
+5. Which of the following are challenges in NLP?
+C) Word Sense Disambiguation
+6. In which of the following areas NLP can be used?
+A) Information retrieval from text B) Automatic summarization
+7. What is Morphological Segmentation?
+C) Separate words into individual morphemes and identify the class of the morphemes
+8. Which of the following are word embedding techniques which are used to capture the semantics of a word?
+A) Word2Vec
+9. Advantages of Word Embeddings are:
+D) All of the above
+10. Which of the following can be used to match similarity between two word vectors?
+A) Cosine similarity B) POS tags similarity
+11. The term distributional semantics basically says that:
+B) The words which occur in similar contexts tend to have similar semantics
+12. Which of the following are used to represent words as vectors?
+A) Occurrence matrix
+C) Co-occurrence matrix
+13. The problem with occurrence and co -occurrence matrix is:
+B) The word vectors are very complex
+C) The word vectors are very high dimensional
+14. The advantages of using word embeddings over co-occurrence matrix are:
+B) The word embeddings are very sparse
+C) The word embeddings are very dense and low-dimensional vectors are compared to co-occurrence matrix
+word vectors.
+15. Which of the following techniques are used for creation of word embeddings?
+A) we try to generate a word given the context of the word by using a deep neural network
+B) we use naïve Bayes to create word embeddings
