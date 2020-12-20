@@ -1,0 +1,45 @@
+In Q1 to Q8, only one option is correct, Choose the correct option:
+1. What happens to R2 measure if we add a new feature?
+B) always increases
+2. The correct relationship between SST, SSR and SSE is given by:
+B) SST = SSR + SSE
+3. Residuals in regression analysis can be defined as:
+A) difference between the actual value and the predicted value.
+4. In a simple linear regression model, if we change the input variable by 1 unit, then how much output variable will change?
+C) By its slope
+5. If the coefficient of determination is equal to 1, then correlation coefficient:
+C) can be any value between -1 to 1
+6. Which of the following plot is best suited for the linear relationship of continuous variables?
+A) Scatter plot
+7. The ratio of MSR/MSE produces:
+D) None of the above.
+8. Which of the following regularizations uses only L2 normalization for its penalty parameter?
+C) Ridge
+In Q9 to Q11, more than one options are correct, Choose all the correct options:
+9. Which of the following statement/s are true for best fitted line?
+B) It shows the positive or negative relation between dependent and independent variables
+C) It always goes through origin
+10. Regularizations helps in:
+B) Generalizing the test set
+11. Linear regression can be implemented through:
+A) Normal Equation
+C) Parity checks
+Q12 to Q15 are subjective answer type questions, Answer them briefly.
+12. Explain R2 and adjusted R2 metrics?
+R2 shows how well terms (data points) fit a curve or line. Adjusted R2 also indicates how well terms fit a curve or line, but adjusts for the number of terms in a model.
+If you add more useful variables, adjusted r-squared will increase. Adjusted R2 will always be less than or equal to R2
+13. Explain the cost function of linear regression?
+a cost function is a measure of how wrong the model is in terms of its ability to estimate the relationship between X and y. This is typically expressed as a difference or distance between the predicted value and the actual value.
+The cost function (you may also see this referred to as loss or error.) can be estimated by iteratively running the model to compare estimated predictions against “ground truth” — the known values of y
+14. Differentiate SSE, SSR and SST.
+The sum of squares total, denoted SST, is the squared differences between the observed dependent variable and its mean
+It is a measure of the total variability of the dataset
+SSR is the sum of squares due to regression
+It is the sum of the differences between the predicted value and the mean of the dependent variable
+SSE is the sum of squares error.
+The error is the difference between the observed value and the predicted value.
+We usually want to minimize the error.The smaller the error, the better the estimation power of the regression
+Mathematically, SST = SSR + SSE.
+The rationale is the following: the total variability of the data set is equal to the variability explained by the regression line plus the unexplained variability, known as error
+15. What are the various evaluation metrics for linear regression?
+Mean Squared Error(MSE) Root-Mean-Squared-Error(RMSE). Mean-Absolute-Error(MAE)
