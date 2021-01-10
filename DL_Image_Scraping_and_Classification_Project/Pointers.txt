@@ -1,0 +1,5 @@
+- Perform proper data cleaning. 
+- Use proper models for training, do proper hyperparameter tuning and choose the right evaluation metrics to finalize your model. 
+- Test your predictions on multiple metrics and then finalize the model. 
+- Create a detailed report mentioning all the steps in the format of sample documentation file. 
+- Create a powerpoint presentation of the project. 
